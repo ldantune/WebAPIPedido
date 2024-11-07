@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "B9Nspj/KxXYxhFf88n+fa790wGq0gvdwsPn5SsZz/go=",
+  "Source": "WebAPI.Pedidos",
+  "BasePath": "_content/WebAPI.Pedidos",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
