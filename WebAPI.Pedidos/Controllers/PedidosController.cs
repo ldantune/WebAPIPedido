@@ -19,7 +19,6 @@ public class PedidosController : ControllerBase
         _mapper = mapper;
     }
 
-    // Iniciar um novo pedido
     [HttpPost]
     public async Task<IActionResult> IniciarPedido()
     {
@@ -34,7 +33,6 @@ public class PedidosController : ControllerBase
         }
     }
 
-    // Adicionar produtos ao pedido
     [HttpPost("{pedidoId}/produtos")]
     public async Task<IActionResult> AdicionarProdutoAoPedido(int pedidoId, [FromBody] PedidoProdutoDTO pedidoProdutoDto)
     {
@@ -49,7 +47,6 @@ public class PedidosController : ControllerBase
         }
     }
 
-    // Remover produtos do pedido
     [HttpDelete("{pedidoId}/produtos/{produtoId}")]
     public async Task<IActionResult> RemoverProdutoDoPedido(int pedidoId, int produtoId)
     {
@@ -64,7 +61,6 @@ public class PedidosController : ControllerBase
         }
     }
 
-    // Fechar o pedido
     [HttpPost("{pedidoId}/fechar")]
     public async Task<IActionResult> FecharPedido(int pedidoId)
     {
@@ -79,7 +75,6 @@ public class PedidosController : ControllerBase
         }
     }
 
-    // Listar todos os pedidos
     [HttpGet]
     public async Task<IActionResult> ListarPedidos([FromQuery] int paginaAtual = 1, [FromQuery] int itensPorPagina = 3, [FromQuery] StatusPedido? status = null)
     {
@@ -94,7 +89,6 @@ public class PedidosController : ControllerBase
         }
     }
 
-    // Obter um pedido e seus produtos através do ID
     [HttpGet("{id}")]
     public async Task<IActionResult> ObterPedido(int id)
     {
