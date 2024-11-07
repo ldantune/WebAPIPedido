@@ -14,11 +14,11 @@
     Get (Buscar todos os produtos, com paginação)
     Post (Cadastrar um novo produto)
 
-**Observação: Caso o projeto não tenha a pasta de migrations, ela pode ser criada através do comando:**
-# dotnet ef migrations add InitialMigration
+# Observação: Caso o projeto não tenha a pasta de migrations, ela pode ser criada através do comando:
+    dotnet ef migrations add InitialMigration
 
-**Após a criação da migration, execute o comando a seguir para atualizar o banco de dados e criar as tabelas:**
-# dotnet ef database update
+# Após a criação da migration, execute o comando a seguir para atualizar o banco de dados e criar as tabelas:**
+    dotnet ef database update
 
-**Neste projeto, o banco de dados utilizado é o SQLite.**
+Neste projeto, o banco de dados utilizado é o SQLite.
 
